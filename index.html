@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Opacity Change</title>
+</head>
+
+<body>
+    <div class="header-bg">
+        <h2>Change Opacity on scroll</h2>
+    </div>
+    <section>
+        <h2>Created By Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, in. Libero quo itaque excepturi quas animi
+            optio odio repellendus molestiae iste, architecto quasi voluptate saepe fugit rerum repellat nihil
+            accusantium
+            corporis, consequuntur, eaque expedita recusandae voluptas voluptatum ratione incidunt? Debitis impedit
+            culpa at
+            necessitatibus deserunt assumenda et. Eligendi quod ut tempora saepe nam quasi ullam tenetur recusandae
+            laboriosam, hic mollitia pariatur, itaque sequi voluptas neque totam omnis asperiores sint cupiditate minus
+            nesciunt. Obcaecati minima laboriosam adipisci ut magnam perspiciatis ea nihil deserunt cumque rerum dolorem
+            facere earum illum, a optio quod debitis nostrum id dicta. Veniam fugit quidem ex illum.</p>
+    </section>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.header-bg').css("opacity", 1 -
+                    $(window).scrollTop() / 500)
+            })
+        })
+    </script>
+</body>
+
+</html>
